@@ -1,1 +1,1 @@
-# -colsing-sidebar-by-clicking-outside
+# Colsing Sidebar By Clicking Outside
