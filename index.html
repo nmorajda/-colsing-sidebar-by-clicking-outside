@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Team</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="container">
+            <article class="article">
+                <h1>Lorem ipsum dolor set amot</h1>
+                <p>Consectetur adipisicing elit. Iure magni eligendi animi suscipit amet quaerat
+                    voluptatum sequi odit ducimus. Quae, harum accusantium! Distinctio ullam, voluptas iste laudantium
+                    magni nobis temporibus.
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas voluptate accusamus et facere
+                    quisquam quidem vero deleniti quam, dolore labore culpa, molestias ab pariatur odio, tempore illo
+                    accusantium
+                    fuga magnam. Explicabo, consectetur. Reiciendis sapiente rerum ratione aspernatur quis dolorem,
+                    corrupti sit quo cupiditate omnis reprehenderit sequi distinctio dolorum vitae esse, iste totam est
+                    quibusdam porro
+                    eveniet. Veritatis nihil fugiat dolore?</p>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.addEventListener('click', (e) => {
+            if (e.target === sidebar) {
+                return;
+            }
+
+            if (e.target === toggle) {
+                return;
+            }
+
+            toggle.classList.remove('active');
+            sidebar.classList.remove('active');
+
+        })
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
